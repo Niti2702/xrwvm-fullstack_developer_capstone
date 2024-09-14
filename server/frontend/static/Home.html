@@ -7,7 +7,7 @@
 <script>
 
 const logout = async (e) => {
-    let logout_url = window.location.origin+"/djangoapp/logout";
+  let logout_url = window.location.origin+"/djangoapp/logout";
   const res = await fetch(logout_url, {
     method: "GET",
   });
@@ -22,8 +22,7 @@ const logout = async (e) => {
   }
   else {
     alert("The user could not be logged out.")
-  }  
-//Include the code for logout here.
+  }
 };
 
 let checkSession = ()=>{
